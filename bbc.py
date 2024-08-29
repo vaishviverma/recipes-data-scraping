@@ -8,8 +8,9 @@ from selenium.common.exceptions import NoSuchElementException, TimeoutException
 import time
 import csv
 import re
+import string
 
-#recipe_title, description, cuisine, ingredient_list, servings, prep_time, cook_time, total_time, source
+#recipe_title, description, cuisine, rating, ingredient_list, servings, prep_time, cook_time, total_time, source
 # steps, recipe_url, image_url
 
 
@@ -18,7 +19,7 @@ with open(filename, mode="w", newline="", encoding='utf-8') as file:
     writer = csv.writer(file)
     writer.writerow(["title","description","cuisine","ingredient_list","serving","prep_time","cook_time","source","steps","recipe_url","image_url"])
 
-driver_path = 'chromedriver-linux64/chromedriver'
+driver_path = 'chromedriver-win32\chromedriver.exe'
 website = 'https://www.bbc.co.uk/food/cuisines'
 chrome_service = Service(executable_path=driver_path)
 driver = webdriver.Chrome(service=chrome_service)
@@ -27,45 +28,54 @@ driver.get(website)
 
 
 def get_title():
-    title_element = driver.find_element(By.XPATH, "//h1[@class='gel-trafalgar content-title__text']")
+    try:
+        title_element = driver.find_element(By.XPATH, "//h1[@class='gel-trafalgar content-title__text']")
+    except:
+        title_element = '-'
     return title_element.text
 
 def get_description():
-    des = driver.find_element(By.XPATH, "//p[@class='recipe-description__text']")
-    inner_html = des.get_attribute('innerHTML')
-    desc = re.sub(r'<br\s*\/?>', ' ', inner_html) 
-    desc = re.sub(r'<.*?>', '', desc)
-    desc = " ".join(desc.split())
+    try:
+        des = driver.find_element(By.XPATH, "//p[@class='recipe-description__text']")
+        inner_html = des.get_attribute('innerHTML')
+        desc = re.sub(r'<br\s*\/?>', ' ', inner_html) 
+        desc = re.sub(r'<.*?>', '', desc)
+        desc = " ".join(desc.split())
+    except: 
+        desc = "-"
     return desc
 
 def get_ingredients():
     all_ingredients = []
-    ul_elements = driver.find_elements(By.XPATH, "//ul[@class='recipe-ingredients__list']")
-    for ul in ul_elements:
-        li_elements = ul.find_elements(By.TAG_NAME, 'li')
-        ingredients = [li.text for li in li_elements]
-        all_ingredients.extend(ingredients) 
+    try:
+        ul_elements = driver.find_elements(By.XPATH, "//ul[@class='recipe-ingredients__list']")
+        for ul in ul_elements:
+            li_elements = ul.find_elements(By.TAG_NAME, 'li')
+            ingredients = [li.text for li in li_elements]
+            all_ingredients.extend(ingredients) 
+    except:
+        pass
     return all_ingredients
 
 def get_steps():
     all_steps = []
-    ul = driver.find_element(By.XPATH, "//ol[@class='recipe-method__list']")
-    li_elements = ul.find_elements(By.TAG_NAME, 'li')
-    step = [li.text for li in li_elements]
-    all_steps.extend(step) 
+    try:
+        ul = driver.find_element(By.XPATH, "//ol[@class='recipe-method__list']")
+        li_elements = ul.find_elements(By.TAG_NAME, 'li')
+        step = [li.text for li in li_elements]
+        all_steps.extend(step) 
+    except:
+        pass
     return all_steps
 
 def get_metadata():
-    prep_time_element = driver.find_elements(By.XPATH, "//p[@class='recipe-metadata__prep-time']")
-    cook_time_element = driver.find_elements(By.XPATH, "//p[@class='recipe-metadata__cook-time']")
-    serve_element = driver.find_elements(By.XPATH, "//p[@class='recipe-metadata__serving']")
-    for p in prep_time_element:
-        preparation_time = p.text
-    for c in cook_time_element:
-        cooking_time = c.text
-    for s in serve_element:
-        serves = s.text
-    return preparation_time, cooking_time, serves
+    try:
+        prep_time = driver.find_elements(By.XPATH, "//p[@class='recipe-metadata__prep-time']")[-1].text
+        cook_time = driver.find_elements(By.XPATH, "//p[@class='recipe-metadata__cook-time']")[-1].text
+        serves = driver.find_elements(By.XPATH, "//p[@class='recipe-metadata__serving']")[-1].text
+    except: 
+        pass
+    return prep_time, cook_time, serves
 
 
 def get_image_url():
@@ -76,56 +86,60 @@ def get_image_url():
     except NoSuchElementException:
         print("Image element not found.")
         return None
+    
+def get_rating():
+    try:
+        rating = driver.find_element(By.XPATH, "//span[contains(@class, 'aggregate-rating__total') and contains(@class, 'gel-long-primer-bold')]").text
+    except:
+        rating = '-'
+    return rating
+
+cuisine = ["british","african","american","italian","indian","caribbean","chinese","east_european","french","greek","irish","japanese","korean","mexican",
+           "nordic","pakistani","north_african","portuguese","south-american","spanish","turkish_and_middle_eastern","thai_and_south-east_asian"]
+
+
+links=[]
 
 def get_cuisine():
-    cuisine_elements = driver.find_elements(By.XPATH,"//a[@class='promo promo__cuisine']")
-    cuisine_dict = {}
+    for i in cuisine:
+        for letter in string.ascii_lowercase:
+            try:
+                url = "https://www.bbc.co.uk/food/cuisines/"+ i +"/a-z/" + letter
+                driver.get(url)
+                if driver.current_url == ("https://www.bbc.co.uk/food/cuisines/"+i):
+                    driver.back()
+                    continue
+                flag = True
+                while flag==True:
+                    elements = driver.find_elements(By.XPATH,"//div[@class='gel-layout__item gel-1/2 gel-1/3@m gel-1/4@xl']")
+                    for ele in elements:
+                        links.append(ele.find_element(By.TAG_NAME,'a').get_attribute("href"))
 
-    for ele in cuisine_elements:
-        cuisine_name = ele.find_element(By.TAG_NAME,"h3")
-        cuisine_dict[cuisine_name.text] = ele.get_attribute("href")
-    
-    number_of_cuisines = 0
-    for i in cuisine_dict:
-            cuisine=i
-            driver.get(cuisine_dict[i])
-            dishes = driver.find_elements(By.XPATH,"//a[@class='promo promo__main_course']")
-            links=[]
-            for dish in dishes:
-                links.append(dish.get_attribute("href"))
-            number_of_cuisines+=1
-            if number_of_cuisines>4:
-                break
-            count=0
-            for i in range(5):
-                driver.get(links[i])
-                title = get_title()
-                desc = get_description()
-                preptime, cooktime, serves = get_metadata()
-                ingrd = get_ingredients()
-                steps = get_steps()
-                imageurl = get_image_url()
-                recipeurl = driver.current_url
-                store_output(title, desc, cuisine, ingrd, serves, preptime, cooktime, steps, recipeurl, imageurl)
-                count+=1
-                if count>5:
-                    break
-                driver.back()
-                WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//a[@class='promo promo__main_course']")))
+                    try:
+                        next_page = driver.find_elements(By.XPATH,"//li[@class='pagination__list-item pagination__priority--0']")
+                        page = next_page[-1].find_element(By.TAG_NAME,'a')
+                        if page.get_attribute("href")!=driver.current_url:
+                            driver.get(page.get_attribute("href"))
+                    except:
+                        print("no next page")
+                        flag=False
+                    
+            except:
+                print("no recipe with this letter")
 
-            driver.back()
-            WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//a[@class='promo promo__cuisine']")))
-            
-
-
-def store_output(title, desc, cuisine, ingrd, serves, preptime, cooktime, steps, recipeurl, imageurl):
+def store_output(title, desc, cuisine, rating, ingrd, serves, preptime, cooktime, steps, recipeurl, imageurl):
     filename = "bbc.csv"
-    data=[title, desc, cuisine, ingrd, serves, preptime, cooktime, "BBC Food", steps, recipeurl, imageurl]
+    data=[title, desc, cuisine, rating, ingrd, serves, preptime, cooktime, "BBC Food", steps, recipeurl, imageurl]
     with open(filename, mode="a", newline="", encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(data)
-        
+
+def store_links(links):
+    with open('links.txt', 'w') as file:
+        for link in links:
+            file.write(link+"\n")
 
 get_cuisine()
+store_links(links)
 
 driver.quit()

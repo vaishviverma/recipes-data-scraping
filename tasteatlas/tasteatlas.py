@@ -194,6 +194,6 @@ def store_output(title, desc, cuisine, rating, ingrd, servings, preptime, cookti
         writer.writerow(data)
         
 links = recipe_list()
-# get_content(links)
+get_content(links)
 
 driver.quit()

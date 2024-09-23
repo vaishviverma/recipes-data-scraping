@@ -15,7 +15,7 @@ from selenium.webdriver.chrome.options import Options
 
 # recipe_title, description, cuisine, rating, ingredient_list, servings, prep_time, cook_time, total_time, source, steps, recipe_url, image_url
 
-filename = "bbcgoodfood.csv"
+filename = "bbcgoodfood/bbcgoodfood.csv"
 with open(filename, mode="w", newline="", encoding='utf-8') as file:
     writer = csv.writer(file)
     writer.writerow(["title","description","cuisine","rating","ingredient_list","serving","prep_time","cook_time","source","steps","recipe_url","image_url", "kcal", "fat", "saturates", "carbs", "sugars", "fibre", "protein", "salt" ])
@@ -122,9 +122,9 @@ def get_rating():
     return rating
 
 def get_content():
-    with open('finalrecipe.txt', 'r') as file:
-        # for _ in range(3464):
-        #     file.readline()
+    with open('bbcgoodfood/recipelist.txt', 'r') as file:
+        for _ in range(8330):
+            file.readline()
         for line in file:
             flag=True
             count = 0
@@ -147,7 +147,6 @@ def get_content():
                     recipeurl = driver.current_url
                     rating = get_rating()
                     kcal, fat, saturates, carbs, sugars, fibre, protein, salt = get_nutrients()
-                    print(title)
                     flag=False
                     store_output(title, desc, "", rating, ingrd, serves, preptime, cooktime, steps, recipeurl, imageurl, kcal, fat, saturates, carbs, sugars, fibre, protein, salt)
                 except Exception as e:
@@ -155,8 +154,8 @@ def get_content():
                     count += 1
                      
 def store_output(title, desc, cuisine, rating, ingrd, serves, preptime, cooktime, steps, recipeurl, imageurl, kcal, fat, saturates, carbs, sugars, fibre, protein, salt):
-    filename = "bbcgoodfood.csv"
-    data=[title, desc, cuisine, rating, ingrd, serves, preptime, cooktime, "BBC Food", steps, recipeurl, imageurl, kcal, fat, saturates, carbs, sugars, fibre, protein, salt]
+    filename = "bbcgoodfood/bbcgoodfood.csv"
+    data=[title, desc, cuisine, rating, ingrd, serves, preptime, cooktime, "BBC Good Food", steps, recipeurl, imageurl, kcal, fat, saturates, carbs, sugars, fibre, protein, salt]
     with open(filename, mode="a", newline="", encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(data)
@@ -164,8 +163,7 @@ def store_output(title, desc, cuisine, rating, ingrd, serves, preptime, cooktime
 def load():
     while True:
         try:
-            # Scroll and click the button with retry logic for stale elements
-            retries = 3  # number of retry attempts for stale elements
+            retries = 3 
             while retries > 0:
                 try:
                     load_next_button = WebDriverWait(driver, 3).until(

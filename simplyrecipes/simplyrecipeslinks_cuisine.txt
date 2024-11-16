@@ -1,0 +1,506 @@
+Japanese,https://www.simplyrecipes.com/japanese-cheesecake-recipe-7376926
+Japanese,https://www.simplyrecipes.com/microwave-oyakodon-japanese-chicken-and-egg-rice-bowl-recipe-7105509
+Japanese,https://www.simplyrecipes.com/japanese-egg-salad-recipe-8612956
+Japanese,https://www.simplyrecipes.com/chirashi-sushi-recipe-6361879
+Japanese,https://www.simplyrecipes.com/california-roll-recipe-6361878
+Japanese,https://www.simplyrecipes.com/sushi-rice-recipe-6361876
+Japanese,https://www.simplyrecipes.com/tamagoyaki-recipe-5272304
+Japanese,https://www.simplyrecipes.com/soy-sauce-eggs-recipe-5272286
+Japanese,https://www.simplyrecipes.com/miso-soup-recipe-5207685
+Japanese,https://www.simplyrecipes.com/recipes/weeknight_chicken_ramen/
+Japanese,https://www.simplyrecipes.com/dashi-recipe-5322811
+Japanese,https://www.simplyrecipes.com/japanese-souffle-pancakes-recipe-5272290
+Japanese,https://www.simplyrecipes.com/recipes/pan_simmered_pacific_black_cod/
+Jaimaican,https://www.simplyrecipes.com/maduros-recipe-fried-sweet-plantains-7567877
+Jaimaican,https://www.simplyrecipes.com/jerk-seasoning-dry-jamaican-jerk-rub-7564928
+Jaimaican,https://www.simplyrecipes.com/recipes/jerk_chicken/
+Jaimaican,https://www.simplyrecipes.com/jamaican-rice-and-peas-recipe-5270439
+Jaimaican,https://www.simplyrecipes.com/stew-beef-jamaican-beef-stew-with-scotch-bonnets-ginger-and-allspice-5114665
+Jaimaican,https://www.simplyrecipes.com/rasta-pasta-with-jerk-chicken-recipe-5235441
+Jaimaican,https://www.simplyrecipes.com/recipes/rum_raisin_banana_bread/
+Jaimaican,https://www.simplyrecipes.com/recipes/jamaican_goat_curry/
+Jaimaican,https://www.simplyrecipes.com/recipes/coconut_rice_and_beans/
+Jaimaican,https://www.simplyrecipes.com/recipes/jamaican_jerk_burgers/
+Italian,https://www.simplyrecipes.com/pasta-e-ceci-recipe-8715516
+Italian,https://www.simplyrecipes.com/chicken-romano-recipe-8710448
+Italian,https://www.simplyrecipes.com/migliaccio-recipe-8697817
+Italian,https://www.simplyrecipes.com/zucchini-scarpaccia-recipe-8661553
+Italian,https://www.simplyrecipes.com/caponata-pasta-recipe-8661625
+Italian,https://www.simplyrecipes.com/chicken-pomodoro-recipe-8624736
+Italian,https://www.simplyrecipes.com/ciambellone-recipe-8639232
+Italian,https://www.simplyrecipes.com/italian-butter-chicken-recipe-8639819
+Italian,https://www.simplyrecipes.com/3-ingredient-italian-appetizer-8415836
+Italian,https://www.simplyrecipes.com/assassins-spaghetti-recipe-8409970
+Italian,https://www.simplyrecipes.com/italian-beans-and-greens-recipe-8409662
+Italian,https://www.simplyrecipes.com/copycat-olive-garden-chicken-gnocchi-soup-recipe-7967185
+Italian,https://www.simplyrecipes.com/strawberry-semifreddo-recipe-7499439
+Italian,https://www.simplyrecipes.com/homemade-cavatelli-recipe-7377036
+Italian,https://www.simplyrecipes.com/paccheri-with-quick-sausage-ragu-recipe-7487414
+Italian,https://www.simplyrecipes.com/homemade-tagliatelle-recipe-7377610
+Italian,https://www.simplyrecipes.com/cheese-stuffed-manicotti-recipe-7375880
+Italian,https://www.simplyrecipes.com/homemade-marinara-sauce-recipe-7372684
+Italian,https://www.simplyrecipes.com/skillet-eggplant-parmesan-recipe-7254594
+Italian,https://www.simplyrecipes.com/antipasto-salad-recipe-7254795
+Italian,https://www.simplyrecipes.com/vegan-cacio-e-pepe-recipe-6890181
+Italian,https://www.simplyrecipes.com/brown-butter-cacio-e-pepe-recipe-6834518
+Italian,https://www.simplyrecipes.com/recipes/lasagna/
+Italian,https://www.simplyrecipes.com/recipes/baked_ziti/
+Italian,https://www.simplyrecipes.com/recipes/fresh_basil_pesto/
+Italian,https://www.simplyrecipes.com/recipes/chicken_piccata/
+Italian,https://www.simplyrecipes.com/recipes/bruschetta_with_tomato_and_basil/
+Italian,https://www.simplyrecipes.com/recipes/spaghetti_alla_carbonara/
+Italian,https://www.simplyrecipes.com/recipes/homemade_pizza/
+Italian,https://www.simplyrecipes.com/recipes/garlic_bread/
+Italian,https://www.simplyrecipes.com/recipes/gazpacho/
+Italian,https://www.simplyrecipes.com/recipes/basic_tomato_sauce/
+Italian,https://www.simplyrecipes.com/recipes/minestrone_soup/
+Italian,https://www.simplyrecipes.com/recipes/vegetarian_spinach_and_mushroom_lasagna/
+Italian,https://www.simplyrecipes.com/recipes/fettuccine_alfredo/
+Italian,https://www.simplyrecipes.com/recipes/panettone/
+Italian,https://www.simplyrecipes.com/recipes/osso_buco/
+Italian,https://www.simplyrecipes.com/recipes/chicken_parmesan/
+Italian,https://www.simplyrecipes.com/recipes/baked_spaghetti/
+Italian,https://www.simplyrecipes.com/recipes/tuscan_chicken_pasta_skillet/
+Italian,https://www.simplyrecipes.com/recipes/italian_meatballs/
+Italian,https://www.simplyrecipes.com/recipes/bolognese_meat_sauce/
+Italian,https://www.simplyrecipes.com/recipes/pasta_e_fagioli/
+Italian,https://www.simplyrecipes.com/recipes/pasta_puttanesca/
+Italian,https://www.simplyrecipes.com/recipes/heirloom_tomato_basil_mozzarella_salad/
+Italian,https://www.simplyrecipes.com/recipes/make_ahead_alfredo_sauce/
+Italian,https://www.simplyrecipes.com/recipes/italian_sausage_spaghetti/
+Italian,https://www.simplyrecipes.com/recipes/chicken_marinara/
+Italian,https://www.simplyrecipes.com/recipes/lasagna_bolognese/
+Italian,https://www.simplyrecipes.com/recipes/slow_cooker_meatballs_in_tomato_sauce/
+Italian,https://www.simplyrecipes.com/recipes/caponata_eggplant_relish/
+Italian,https://www.simplyrecipes.com/recipes/amaretti_cookies/
+Italian,https://www.simplyrecipes.com/recipes/panzanella_bread_salad/
+Italian,https://www.simplyrecipes.com/recipes/creamy_polenta_with_white_beans_and_roasted_broccoli/
+Italian,https://www.simplyrecipes.com/recipes/shrimp_risotto/
+Italian,https://www.simplyrecipes.com/recipes/zabaglione/
+Italian,https://www.simplyrecipes.com/recipes/quick_bolognese_sauce/
+Italian,https://www.simplyrecipes.com/recipes/shrimp_pasta_alla_vodka/
+Italian,https://www.simplyrecipes.com/recipes/chicken_cacciatore_hunter_style_chicken/
+Italian,https://www.simplyrecipes.com/recipes/italian_pot_roast/
+Italian,https://www.simplyrecipes.com/recipes/italian_egg_drop_soup_stracciatella/
+Italian,https://www.simplyrecipes.com/recipes/white_beans_and_sausage/
+Italian,https://www.simplyrecipes.com/recipes/spinach_risotto/
+Irish,https://www.simplyrecipes.com/recipes/home_cured_corned_beef/
+Irish,https://www.simplyrecipes.com/recipes/colcannon/
+Irish,https://www.simplyrecipes.com/recipes/irish_beef_stew/
+Irish,https://www.simplyrecipes.com/recipes/instant_pot_corned_beef_and_cabbage/
+Irish,https://www.simplyrecipes.com/recipes/guinness_bread_with_molasses/
+Irish,https://www.simplyrecipes.com/recipes/oatmeal_soda_bread/
+Irish,https://www.simplyrecipes.com/recipes/caraway_soda_bread/
+Irish,https://www.simplyrecipes.com/recipes/irish_brown_bread/
+Irish,https://www.simplyrecipes.com/recipes/irish_lamb_stew_with_a_twist/
+Irish,https://www.simplyrecipes.com/recipes/colcannon_cakes/
+Indian,https://www.simplyrecipes.com/bombay-aloo-recipe-8699317
+Indian,https://www.simplyrecipes.com/garam-masala-recipe-7644066
+Indian,https://www.simplyrecipes.com/daal-palak-lentil-and-spinach-curry-7112108
+Indian,https://www.simplyrecipes.com/recipes/chai/
+Indian,https://www.simplyrecipes.com/recipes/mango_lassi/
+Indian,https://www.simplyrecipes.com/recipes/indian_style_rice/
+Indian,https://www.simplyrecipes.com/recipes/how_to_make_naan/
+Indian,https://www.simplyrecipes.com/recipes/chicken_mulligatawny_soup/
+Indian,https://www.simplyrecipes.com/what-is-ginger-garlic-paste-6265454
+Indian,https://www.simplyrecipes.com/motta-porrichu-spicy-coconut-ginger-omelette-recipe-6260310
+Indian,https://www.simplyrecipes.com/tomato-rice-recipe-6500113
+Indian,https://www.simplyrecipes.com/delicata-squash-pakoras-recipe-6751917
+Indian,https://www.simplyrecipes.com/pumpkin-ladoo-recipe-6744877
+Indian,https://www.simplyrecipes.com/roti-recipe-5209201
+Indian,https://www.simplyrecipes.com/kaju-katli-recipe-5207523
+Indian,https://www.simplyrecipes.com/nimbu-soda-with-cucumber-cucumber-salted-lime-soda-recipe-5207103
+Indian,https://www.simplyrecipes.com/grilled-shrimp-with-masala-paste-5225101
+Indian,https://www.simplyrecipes.com/recipes/aromatic_coconut_rice/
+Indian,https://www.simplyrecipes.com/recipes/how_to_make_ghee/
+Indian,https://www.simplyrecipes.com/recipes/cucumber_mint_raita/
+Indian,https://www.simplyrecipes.com/recipes/chicken_korma/
+Indian,https://www.simplyrecipes.com/matar-paneer-recipe-5215858
+Indian,https://www.simplyrecipes.com/recipes/indian_butter_chicken/
+Indian,https://www.simplyrecipes.com/recipes/lamb_curry/
+Indian,https://www.simplyrecipes.com/recipes/chicken_tikka_masala/
+Indian,https://www.simplyrecipes.com/recipes/tandoori_chicken/
+Indian,https://www.simplyrecipes.com/recipes/chicken_biryani/
+Indian,https://www.simplyrecipes.com/recipes/indian_chicken_biryani/
+Indian,https://www.simplyrecipes.com/recipes/red_lentil_dal/
+Indian,https://www.simplyrecipes.com/recipes/potato_and_broccoli_curry/
+Indian,https://www.simplyrecipes.com/recipes/vegetable_samosas_with_mint_cilantro_chutney/
+Indian,https://www.simplyrecipes.com/recipes/chana_masala/
+Greek,https://www.simplyrecipes.com/maroulosalata-salad-recipe-8689711
+Greek,https://www.simplyrecipes.com/easy-greek-pita-recipe-8661527
+Greek,https://www.simplyrecipes.com/batsaria-recipe-8644808
+Greek,https://www.simplyrecipes.com/recipes/baklava/
+Greek,https://www.simplyrecipes.com/recipes/dads_greek_salad/
+Greek,https://www.simplyrecipes.com/recipes/spanakopita/
+Greek,https://www.simplyrecipes.com/recipes/moussaka/
+Greek,https://www.simplyrecipes.com/recipes/avgolemono_soup/
+Greek,https://www.simplyrecipes.com/recipes/greek_pasta_salad/
+Greek,https://www.simplyrecipes.com/recipes/cucumber_yogurt_salad/
+Greek,https://www.simplyrecipes.com/recipes/greek_chicken_skewers_with_flatbread_and_yogurt_sauce_chicken_souvlaki/
+German,https://www.simplyrecipes.com/german-plum-tart-recipe-8673584
+German,https://www.simplyrecipes.com/bratkartoffeln-german-cottage-fries-recipe-8402394
+German,https://www.simplyrecipes.com/homemade-spaetzle-spaetzle-recipe-6979307
+German,https://www.simplyrecipes.com/recipes/dutch_baby/
+German,https://www.simplyrecipes.com/recipes/sweet_and_sour_red_cabbage/
+German,https://www.simplyrecipes.com/recipes/classic_german_potato_salad/
+German,https://www.simplyrecipes.com/recipes/liverwurst_sandwich/
+German,https://www.simplyrecipes.com/recipes/stollen/
+German,https://www.simplyrecipes.com/german-beef-rouladen-recipe-8401937
+German,https://www.simplyrecipes.com/how-to-make-sauerkraut-6822070
+German,https://www.simplyrecipes.com/bee-sting-cake-recipe-5705238
+German,https://www.simplyrecipes.com/recipes/spareribs_and_sauerkraut/
+German,https://www.simplyrecipes.com/recipes/venison_sauerbraten/
+German,https://www.simplyrecipes.com/recipes/german_farmers_breakfast/
+German,https://www.simplyrecipes.com/recipes/veal_goulash_with_sauerkraut/
+Ethiopian,https://www.simplyrecipes.com/recipes/chicken_drumsticks_ethiopian_style/
+Chinese,https://www.simplyrecipes.com/how-to-velvet-meat-8363032
+Chinese,https://www.simplyrecipes.com/chinese-tomato-egg-recipe-7562056
+Chinese,https://www.simplyrecipes.com/homemade-chili-crisp-recipe-7486716
+Chinese,https://www.simplyrecipes.com/chop-suey-recipe-7229832
+Chinese,https://www.simplyrecipes.com/lion-s-head-meatballs-recipe-7097630
+Chinese,https://www.simplyrecipes.com/hannah-che-fish-fragrant-eggplant-6890589
+Chinese,https://www.simplyrecipes.com/seafood-congee-tang-jai-jook-recipe-7089691
+Chinese,https://www.simplyrecipes.com/chicken-congee-jook-recipe-6944771
+Chinese,https://www.simplyrecipes.com/red-bean-tangyuan-recipe-6891734
+Chinese,https://www.simplyrecipes.com/egg-foo-young-recipe-6890222
+Chinese,https://www.simplyrecipes.com/pork-and-chive-dumplings-recipe-6828753
+Chinese,https://www.simplyrecipes.com/stir-fried-maitake-mushrooms-with-garlic-and-chile-oil-recipe-6828271
+Chinese,https://www.simplyrecipes.com/recipes/egg_drop_soup/
+Chinese,https://www.simplyrecipes.com/recipes/scallion_pancakes/
+Chinese,https://www.simplyrecipes.com/recipes/stir_fry_ginger_beef/
+Chinese,https://www.simplyrecipes.com/recipes/chinese_almond_cookies/
+Chinese,https://www.simplyrecipes.com/recipes/sweet_and_spicy_mushroom_stir_fry/
+Chinese,https://www.simplyrecipes.com/recipes/air_fryer_crab_rangoon/
+Chinese,https://www.simplyrecipes.com/recipes/asian_noodle_salad/
+Chinese,https://www.simplyrecipes.com/recipes/hot_and_sour_soup/
+Chinese,https://www.simplyrecipes.com/recipes/shrimp_with_snow_peas/
+Chinese,https://www.simplyrecipes.com/recipes/sichuan_eggplant/
+Chinese,https://www.simplyrecipes.com/recipes/sichuan_style_stir_fried_chinese_long_beans/
+Chinese,https://www.simplyrecipes.com/recipes/happy_shrimp_stir_fry/
+Chinese,https://www.simplyrecipes.com/chinese-cucumber-salad-with-dark-vinegar-and-chili-crisp-recipe-5525625
+Chinese,https://www.simplyrecipes.com/soy-sauce-eggs-recipe-5272286
+Chinese,https://www.simplyrecipes.com/egg-rolls-recipe-5214651
+Chinese,https://www.simplyrecipes.com/fried-spring-rolls-recipe-5213485
+Chinese,https://www.simplyrecipes.com/whole-steamed-fish-recipe-5212687
+Chinese,https://www.simplyrecipes.com/wonton-soup-recipe-5212605
+Chinese,https://www.simplyrecipes.com/grilled-whole-fish-stuffed-with-herbs-and-chilies-recipe-5203428
+Chinese,https://www.simplyrecipes.com/hetty-mckinnon-s-seaweed-lettuce-salad-recipe-5189361
+Chinese,https://www.simplyrecipes.com/baked-sticky-rice-cake-with-red-bean-paste-nian-gao-recipe-5213082
+Chinese,https://www.simplyrecipes.com/recipes/air_fryer_chinese_egg_rolls/
+Chinese,https://www.simplyrecipes.com/thai-style-chicken-fried-rice-recipe-8683137
+Chinese,https://www.simplyrecipes.com/recipes/shrimp_fried_rice/
+Chinese,https://www.simplyrecipes.com/recipes/chicken_fried_rice/
+Chinese,https://www.simplyrecipes.com/recipes/easy_vegetable_stir_fried_rice/
+Chinese,https://www.simplyrecipes.com/recipes/easy_pork_fried_rice_with_frozen_vegetables/
+Chinese,https://www.simplyrecipes.com/recipes/salmon_fried_rice/
+Chinese,https://www.simplyrecipes.com/kimchi-and-spam-fried-rice-recipe-8382603
+Chinese,https://www.simplyrecipes.com/sheet-pan-fried-rice-6543836
+Chinese,https://www.simplyrecipes.com/1-ingredient-fried-rice-upgrade-8416931
+Chinese,https://www.simplyrecipes.com/kimchi-fried-rice-kimchi-bokkeumbap-recipe-5191933
+Chinese,https://www.simplyrecipes.com/recipes/turmeric_fried_rice_with_eggs_and_kale/
+Chinese,https://www.simplyrecipes.com/recipes/sweet_and_sour_chicken/
+Chinese,https://www.simplyrecipes.com/recipes/moo_goo_gai_pan_chinese_chicken_and_mushroom_stir_fry/
+Chinese,https://www.simplyrecipes.com/recipes/sous_vide_sesame_chicken/
+Chinese,https://www.simplyrecipes.com/recipes/chinese_orange_chicken/
+Chinese,https://www.simplyrecipes.com/recipes/marcs_cashew_chicken/
+Chinese,https://www.simplyrecipes.com/recipes/chinese_smashed_cucumber_salad/
+Chinese,https://www.simplyrecipes.com/recipes/chinese_chicken_salad/
+Chinese,https://www.simplyrecipes.com/recipes/three_teacup_chicken/
+Chinese,https://www.simplyrecipes.com/recipes/slow_cooker_chinese_pulled_pork/
+Cuban,https://www.simplyrecipes.com/pollo-guisado-recipe-7107264
+Cuban,https://www.simplyrecipes.com/adobo-seasoning-recipe-5221076
+Cuban,https://www.simplyrecipes.com/pulpeta-cuban-meatloaf-recipe-5208798
+British,https://www.simplyrecipes.com/claridges-scones-recipe-8714582
+British,https://www.simplyrecipes.com/jacket-potatoes-recipe-8690205
+British,https://www.simplyrecipes.com/cornflake-tart-recipe-8676252
+British,https://www.simplyrecipes.com/3-ingredient-lemon-posset-recipe-7569228
+British,https://www.simplyrecipes.com/homemade-worcestershire-sauce-recipe-7109028
+British,https://www.simplyrecipes.com/banoffee-pie-recipe-7089697
+British,https://www.simplyrecipes.com/black-and-tan-recipe-6828743
+British,https://www.simplyrecipes.com/recipes/beef_wellington/
+British,https://www.simplyrecipes.com/recipes/yorkshire_pudding/
+British,https://www.simplyrecipes.com/recipes/classic_english_toad_in_the_hole/
+British,https://www.simplyrecipes.com/recipes/chicken_mulligatawny_soup/
+British,https://www.simplyrecipes.com/recipes/english_toffee/
+British,https://www.simplyrecipes.com/recipes/banoffee_cheesecake/
+British,https://www.simplyrecipes.com/welsh-rarebit-recipe-8575505
+British,https://www.simplyrecipes.com/victoria-sponge-cake-with-whipped-cream-and-jam-recipe-6744662
+British,https://www.simplyrecipes.com/bubble-and-squeak-recipe-5409264
+British,https://www.simplyrecipes.com/strawberry-eton-mess-recipe-5324579
+British,https://www.simplyrecipes.com/classic-shortbread-cookies-recipe-5268402
+British,https://www.simplyrecipes.com/english-scones-recipe-5183912
+British,https://www.simplyrecipes.com/recipes/sheet_pan_english_breakfast/
+Brazilian,https://www.simplyrecipes.com/recipes/easy_brazilian_cheese_bread/
+Brazilian,https://www.simplyrecipes.com/adobo-seasoning-recipe-5221076
+Brazilian,https://www.simplyrecipes.com/caipirinha-recipe-5212541
+Brazilian,https://www.simplyrecipes.com/recipes/salmon_fish_stew_brazilian_style/
+French,https://www.simplyrecipes.com/easy-french-apple-cake-recipe-8707822
+French,https://www.simplyrecipes.com/lyonnaise-potatoes-recipe-8685359
+French,https://www.simplyrecipes.com/chicken-supreme-recipe-8691874
+French,https://www.simplyrecipes.com/brioche-sandwich-loaf-recipe-6951301
+French,https://www.simplyrecipes.com/potato-croquettes-recipe-6889868
+French,https://www.simplyrecipes.com/chocolate-covered-orange-peels-recipe-6832042
+French,https://www.simplyrecipes.com/lobster-bisque-recipe-6746413
+French,https://www.simplyrecipes.com/magic-cake-recipe-8628262
+French,https://www.simplyrecipes.com/fondant-potatoes-recipe-8382635
+French,https://www.simplyrecipes.com/chocolate-pots-de-creme-recipe-5705287
+French,https://www.simplyrecipes.com/recipes/french_onion_soup/
+French,https://www.simplyrecipes.com/buckwheat-crepes-with-egg-ham-cheese-and-asparagus-recipe-5525642
+French,https://www.simplyrecipes.com/french-omelette-recipe-5272297
+French,https://www.simplyrecipes.com/classic-demi-glace-sauce-recipe-5225071
+French,https://www.simplyrecipes.com/classic-beurre-blanc-sauce-recipe-5225084
+French,https://www.simplyrecipes.com/classic-espagnole-sauce-recipe-5225167
+French,https://www.simplyrecipes.com/classic-french-sauce-tomat-recipe-5225178
+French,https://www.simplyrecipes.com/classic-veloute-sauce-recipe-5225173
+French,https://www.simplyrecipes.com/chocolate-french-macarons-recipe-5211583
+French,https://www.simplyrecipes.com/white-chocolate-peppermint-french-macarons-recipe-5210622
+French,https://www.simplyrecipes.com/classic-bechamel-sauce-recipe-5193540
+French,https://www.simplyrecipes.com/classic-bearnaise-sauce-recipe-5193246
+French,https://www.simplyrecipes.com/french-buttercream-recipe-5191534
+French,https://www.simplyrecipes.com/dijon-mustard-recipe-5190761
+French,https://www.simplyrecipes.com/potato-confit-recipe-5222858
+French,https://www.simplyrecipes.com/french-tips-best-fried-chicken-5221233
+French,https://www.simplyrecipes.com/easy-cassoulet-recipe-5217552
+French,https://www.simplyrecipes.com/classic-chicken-provencal-5218405
+French,https://www.simplyrecipes.com/chicken-confit-recipe-5218196
+French,https://www.simplyrecipes.com/traditional-cassoulet-recipe-5217560
+French,https://www.simplyrecipes.com/recipes/coq_au_vin/
+French,https://www.simplyrecipes.com/recipes/how_to_make_creme_brulee/
+French,https://www.simplyrecipes.com/recipes/easy_blender_hollandaise_sauce/
+French,https://www.simplyrecipes.com/recipes/mignonette_sauce_for_oysters/
+French,https://www.simplyrecipes.com/recipes/chicken_liver_pate/
+French,https://www.simplyrecipes.com/recipes/nicoise_salad/
+French,https://www.simplyrecipes.com/recipes/bouillabaisse/
+French,https://www.simplyrecipes.com/recipes/easy_duck_confit/
+French,https://www.simplyrecipes.com/recipes/egg_nests/
+French,https://www.simplyrecipes.com/recipes/easy_croque_madame/
+French,https://www.simplyrecipes.com/recipes/cherry_clafouti/
+French,https://www.simplyrecipes.com/instant-pot-french-onion-soup-5102108
+French,https://www.simplyrecipes.com/recipes/mussels_in_white_wine_sauce/
+French,https://www.simplyrecipes.com/recipes/basque_lamb_stew/
+French,https://www.simplyrecipes.com/recipes/pear_tarte_tatin/
+French,https://www.simplyrecipes.com/recipes/leeks_vinaigrette/
+French,https://www.simplyrecipes.com/recipes/caramelized_onion_quiche/
+French,https://www.simplyrecipes.com/recipes/rabbit_in_mustard_sauce/
+French,https://www.simplyrecipes.com/recipes/french_green_beans_with_butter_and_herbs/
+French,https://www.simplyrecipes.com/recipes/pan_bagnat_french_tuna_sandwich/
+French,https://www.simplyrecipes.com/recipes/palmiers_elephant_ears/
+French,https://www.simplyrecipes.com/recipes/braised_rabbit_with_prunes/
+French,https://www.simplyrecipes.com/recipes/provencal_seafood_bisque/
+French,https://www.simplyrecipes.com/recipes/provencal_endive_salad/
+French,https://www.simplyrecipes.com/recipes/provencal_potato_salad/
+French,https://www.simplyrecipes.com/recipes/poached_egg_and_bacon_salad___salad_lyonnaise/
+French,https://www.simplyrecipes.com/recipes/le_talleyrand/
+Vietnamese,https://www.simplyrecipes.com/che-ba-mau-recipe-7495370
+Vietnamese,https://www.simplyrecipes.com/easy-pork-banh-mi-recipe-5496377
+Vietnamese,https://www.simplyrecipes.com/chao-ga-vietnamese-chicken-and-rice-porridge-recipe-5324248
+Vietnamese,https://www.simplyrecipes.com/sticky-rice-with-lap-xuong-dried-shrimp-and-shiitake-mushrooms-recipe-5213698
+Vietnamese,https://www.simplyrecipes.com/lotus-purple-sweet-potato-and-coconut-rice-pudding-recipe-5213934
+Vietnamese,https://www.simplyrecipes.com/recipes/easy_wok_kissed_beef_pho/
+Vietnamese,https://www.simplyrecipes.com/recipes/shrimp_spring_rolls_with_peanut_sauce/
+Vietnamese,https://www.simplyrecipes.com/recipes/vietnamese_style_sticky_chicken_skewers/
+Vietnamese,https://www.simplyrecipes.com/recipes/quick_chicken_pho/
+Vietnamese,https://www.simplyrecipes.com/recipes/vietnamese_daikon_and_carrot_pickles/
+Vietnamese,https://www.simplyrecipes.com/recipes/vietnamese_noodle_bowls_with_chicken_bun_ga/
+Vietnamese,https://www.simplyrecipes.com/recipes/char_siu_chicken/
+Vietnamese,https://www.simplyrecipes.com/recipes/curry_scented_grilled_beef_lettuce_wraps/
+Vietnamese,https://www.simplyrecipes.com/recipes/crispy_sweet_potato_pancake_lettuce_wraps/
+US Regional,https://www.simplyrecipes.com/johnny-marzetti-casserole-recipe-7969469
+US Regional,https://www.simplyrecipes.com/chocolate-chess-pie-recipe-7568168
+US Regional,https://www.simplyrecipes.com/halal-cart-chicken-over-rice-recipe-7566689
+US Regional,https://www.simplyrecipes.com/old-bay-seasoning-recipe-7552674
+US Regional,https://www.simplyrecipes.com/chicken-vesuvio-recipe-6833490
+US Regional,https://www.simplyrecipes.com/chopped-cheese-recipe-6825969
+US Regional,https://www.simplyrecipes.com/recipes/cioppino/
+US Regional,https://www.simplyrecipes.com/recipes/hawaiian_oxtail_soup/
+US Regional,https://www.simplyrecipes.com/recipes/new_jersey_italian_hot_dog/
+US Regional,https://www.simplyrecipes.com/recipes/kansas_city_barbecue_sauce/
+US Regional,https://www.simplyrecipes.com/denver-omelet-recipe-5268407
+US Regional,https://www.simplyrecipes.com/chicago-hot-dogs-recipe-5202738
+US Regional,https://www.simplyrecipes.com/smashburger-recipe-5189533
+US Regional,https://www.simplyrecipes.com/juicy-lucy-hamburger-recipe-5189528
+US Regional,https://www.simplyrecipes.com/philly-cheesesteak-recipe-5188498
+US Regional,https://www.simplyrecipes.com/chicago-style-deep-dish-pizza-with-italian-sausage-5115964
+US Regional,https://www.simplyrecipes.com/cedar-plank-salmon-recipe-5497835
+US Regional,https://www.simplyrecipes.com/rhubarb-pie-recipe-5425430
+US Regional,https://www.simplyrecipes.com/pepperoni-rolls-recipe-5324979
+US Regional,https://www.simplyrecipes.com/the-classic-muffuletta-recipe-5324945
+US Regional,https://www.simplyrecipes.com/strawberry-italian-soda-recipe-5225025
+US Regional,https://www.simplyrecipes.com/stewed-chicken-golden-tomatoes-new-native-kitchen-recipe-5209802
+US Regional,https://www.simplyrecipes.com/oyster-po-boy-recipe-7100340
+US Regional,https://www.simplyrecipes.com/bananas-foster-recipe-5443243
+US Regional,https://www.simplyrecipes.com/fish-po-boys-recipe-5225678
+US Regional,https://www.simplyrecipes.com/haitian-epis-recipe-5225263
+US Regional,https://www.simplyrecipes.com/shrimp-creole-recipe-5219883
+US Regional,https://www.simplyrecipes.com/recipes/chicken_gumbo_with_andouille_sausage/
+US Regional,https://www.simplyrecipes.com/recipes/shrimp_etouffee/
+US Regional,https://www.simplyrecipes.com/recipes/remoulade_sauce/
+US Regional,https://www.simplyrecipes.com/recipes/shrimp_po_boy_sandwich/
+US Regional,https://www.simplyrecipes.com/recipes/shrimp_gumbo_with_andouille_sausage/
+US Regional,https://www.simplyrecipes.com/recipes/green_gumbo/
+US Regional,https://www.simplyrecipes.com/recipes/stewed_okra_and_tomatoes_creole_style/
+US Regional,https://www.simplyrecipes.com/recipes/cajun_chicken_salad/
+US Regional,https://www.simplyrecipes.com/steak-tips-recipe-7972730
+US Regional,https://www.simplyrecipes.com/classic-new-england-clam-chowder-recipe-6828227
+US Regional,https://www.simplyrecipes.com/recipes/classic_new_england_lobster_rolls/
+US Regional,https://www.simplyrecipes.com/recipes/how_to_boil_and_eat_lobster/
+US Regional,https://www.simplyrecipes.com/whoopie-pies-recipe-6751406
+US Regional,https://www.simplyrecipes.com/old-bay-shrimp-rolls-recipe-5547714
+US Regional,https://www.simplyrecipes.com/grilled-lobster-tails-recipe-5524892
+US Regional,https://www.simplyrecipes.com/raspberry-lime-rickey-recipe-5203810
+US Regional,https://www.simplyrecipes.com/recipes/how_to_have_a_new_england_clambake_at_home/
+US Regional,https://www.simplyrecipes.com/recipes/slow_cooked_boston_baked_beans/
+US Regional,https://www.simplyrecipes.com/recipes/boston_brown_bread/
+US Regional,https://www.simplyrecipes.com/recipes/baked_stuffed_clams/
+US Regional,https://www.simplyrecipes.com/recipes/anadama_bread/
+US Regional,https://www.simplyrecipes.com/recipes/new_england_boiled_dinner/
+US Regional,https://www.simplyrecipes.com/recipes/indian_pudding/
+US Regional,https://www.simplyrecipes.com/recipes/corn_crab_and_old_bay_deviled_eggs/
+US Regional,https://www.simplyrecipes.com/recipes/baked_bluefish/
+US Regional,https://www.simplyrecipes.com/recipes/new_england_cioppino/
+US Regional,https://www.simplyrecipes.com/recipes/clam_chowder/
+US Regional,https://www.simplyrecipes.com/creamy-southern-lima-beans-recipe-6743934
+US Regional,https://www.simplyrecipes.com/companys-coming-pie-recipe-8737605
+US Regional,https://www.simplyrecipes.com/arkansas-possum-pie-recipe-8729252
+US Regional,https://www.simplyrecipes.com/pineapple-casserole-recipe-8732289
+US Regional,https://www.simplyrecipes.com/funeral-sandwiches-recipe-8717088
+US Regional,https://www.simplyrecipes.com/pig-pickin-cake-recipe-8709688
+US Regional,https://www.simplyrecipes.com/southern-fried-cabbage-recipe-8708860
+US Regional,https://www.simplyrecipes.com/cracker-salad-recipe-8680371
+US Regional,https://www.simplyrecipes.com/pickled-green-bean-salad-recipe-8668567
+Thai,https://www.simplyrecipes.com/beef-krapow-recipe-8711447
+Thai,https://www.simplyrecipes.com/thai-style-chicken-fried-rice-recipe-8683137
+Thai,https://www.simplyrecipes.com/how-to-velvet-meat-8363032
+Thai,https://www.simplyrecipes.com/microwave-red-curry-poached-salmon-recipe-7111220
+Thai,https://www.simplyrecipes.com/kai-jeow-thai-omelet-recipe-6831375
+Thai,https://www.simplyrecipes.com/recipes/how_to_make_pad_thai/
+Thai,https://www.simplyrecipes.com/easy-pad-see-ew-recipe-8612618
+Thai,https://www.simplyrecipes.com/recipes/thai_green_chicken_curry/
+Thai,https://www.simplyrecipes.com/southern-thai-fried-chicken-rice-flour-tip-5221234
+Thai,https://www.simplyrecipes.com/recipes/eggplant_green_curry/
+Thai,https://www.simplyrecipes.com/recipes/thai_noodle_salad_with_peanut_sauce/
+Spanish,https://www.simplyrecipes.com/sopa-de-ajo-recipe-8711658
+Spanish,https://www.simplyrecipes.com/spanish-garlic-shrimp-recipe-8669776
+Spanish,https://www.simplyrecipes.com/seafood-paella-recipe-5101818
+Spanish,https://www.simplyrecipes.com/spanish-style-migas-with-fried-eggs-recipe-5195479
+Spanish,https://www.simplyrecipes.com/basque-cheesecake-5222838
+Spanish,https://www.simplyrecipes.com/pan-con-tomate-recipe-6260045
+Spanish,https://www.simplyrecipes.com/recipes/spanish_tortilla/
+Spanish,https://www.simplyrecipes.com/recipes/easy_red_wine_sangria/
+Spanish,https://www.simplyrecipes.com/recipes/spanish_baked_chicken/
+Spanish,https://www.simplyrecipes.com/recipes/spanish_romesco_sauce/
+Puerto Rican,https://www.simplyrecipes.com/maduros-recipe-fried-sweet-plantains-7567877
+Puerto Rican,https://www.simplyrecipes.com/pollo-guisado-recipe-7107264
+Puerto Rican,https://www.simplyrecipes.com/instant-pot-pernil-roast-pork-recipe-6735747
+Puerto Rican,https://www.simplyrecipes.com/recipes/pan_fried_red_snapper_in_garlic_sauce_chillo_al_ajillo/
+Puerto Rican,https://www.simplyrecipes.com/recipes/puerto_rican_rice_stew_with_shrimp_and_pigeon_peas_asopao_de_camarones_y_gandules/
+Puerto Rican,https://www.simplyrecipes.com/recipes/air_fryer_tostones/
+Puerto Rican,https://www.simplyrecipes.com/recipes/bacalao_guisado_stewed_codfish/
+Puerto Rican,https://www.simplyrecipes.com/recipes/mojo_marinated_grilled_pork_kebabs/
+Puerto Rican,https://www.simplyrecipes.com/jibarito-sandwich-recipe-5323153
+Puerto Rican,https://www.simplyrecipes.com/recaito-puerto-rican-green-cooking-base-recipe-5295487
+Puerto Rican,https://www.simplyrecipes.com/homemade-sazon-spice-mix-recipe-5225550
+Puerto Rican,https://www.simplyrecipes.com/cheeseburger-empanadas-recipe-5225314
+Puerto Rican,https://www.simplyrecipes.com/adobo-seasoning-recipe-5221076
+Puerto Rican,https://www.simplyrecipes.com/brazo-gitano-guava-jelly-roll-cake-recipe-5207699
+Puerto Rican,https://www.simplyrecipes.com/rum-cake-recipe-5206576
+Puerto Rican,https://www.simplyrecipes.com/recipes/tembleque_puerto_rican_coconut_pudding/
+Puerto Rican,https://www.simplyrecipes.com/recipes/puerto_rican_salmorejo_stewed_crab_and_tomatoes_with_rice/
+Puerto Rican,https://www.simplyrecipes.com/recipes/arroz_con_tocino_puerto_rican_rice_with_salt_pork/
+Portuguese,https://www.simplyrecipes.com/caldo-verde-recipe-8700874
+Portuguese,https://www.simplyrecipes.com/recipes/portuguese_salt_cod_stew_bacalhoada/
+Polish,https://www.simplyrecipes.com/recipes/polish_hunters_stew/
+Polish,https://www.simplyrecipes.com/fermented-cucumber-pickles-6822943
+Polish,https://www.simplyrecipes.com/how-to-make-sauerkraut-6822070
+Mexican,https://www.simplyrecipes.com/huevos-divorciados-recipe-8700481
+Mexican,https://www.simplyrecipes.com/flan-recipe-8418594
+Mexican,https://www.simplyrecipes.com/pan-de-muerto-recipe-8362913
+Mexican,https://www.simplyrecipes.com/carne-picada-recipe-7972483
+Mexican,https://www.simplyrecipes.com/arrachera-recipe-mexican-skirt-steak-7567800
+Mexican,https://www.simplyrecipes.com/fajita-seasoning-recipe-7367673
+Mexican,https://www.simplyrecipes.com/mantecadas-recipe-7367679
+Mexican,https://www.simplyrecipes.com/microwave-arroz-verde-recipe-7110160
+Mexican,https://www.simplyrecipes.com/red-enchilada-sauce-recipe-7097284
+Mexican,https://www.simplyrecipes.com/poblano-corn-and-cheese-tamales-recipe-6835272
+Mexican,https://www.simplyrecipes.com/chicken-tamales-with-chile-verde-recipe-6835136
+Mexican,https://www.simplyrecipes.com/masa-for-tamales-easy-tamales-dough-recipe-6835037
+Mexican,https://www.simplyrecipes.com/taquitos-de-pollo-chicken-taquitos-recipe-6832577
+Mexican,https://www.simplyrecipes.com/carnitas-recipe-6745896
+Mexican,https://www.simplyrecipes.com/pulled-pork-enchiladas-recipe-6745860
+Mexican,https://www.simplyrecipes.com/tacos-al-pastor-recipe-5496915
+Mexican,https://www.simplyrecipes.com/vegetarian-enchiladas-with-easy-tomatillo-salsa-recipe-5270637
+Mexican,https://www.simplyrecipes.com/enfrijoladas-with-black-beans-avocado-and-cotija-5114420
+Mexican,https://www.simplyrecipes.com/michelada-recipe-5498824
+Mexican,https://www.simplyrecipes.com/homemade-sazon-spice-mix-recipe-5225550
+Mexican,https://www.simplyrecipes.com/grilled-pork-with-adobo-5225104
+Mexican,https://www.simplyrecipes.com/adobo-seasoning-recipe-5221076
+Mexican,https://www.simplyrecipes.com/recipes/posole_rojo/
+Mexican,https://www.simplyrecipes.com/esquites-recipe-5649771
+Mexican,https://www.simplyrecipes.com/birria-tacos-recipe-5270813
+Mexican,https://www.simplyrecipes.com/beef-birria-recipe-5270810
+Mexican,https://www.simplyrecipes.com/tepache-recipe-5223710
+Mexican,https://www.simplyrecipes.com/recipes/slow_cooker_honey_chipotle_chicken_tacos/
+Mexican,https://www.simplyrecipes.com/recipes/ceviche/
+Mexican,https://www.simplyrecipes.com/recipes/horchata/
+Mexican,https://www.simplyrecipes.com/recipes/fresh_tomato_salsa/
+Mexican,https://www.simplyrecipes.com/recipes/spanish_rice/
+Mexican,https://www.simplyrecipes.com/recipes/cilantro_lime_rice/
+Mexican,https://www.simplyrecipes.com/recipes/grilled_mexican_street_corn_elotes/
+Mexican,https://www.simplyrecipes.com/recipes/albondigas_soup/
+Mexican,https://www.simplyrecipes.com/recipes/how_to_make_homemade_tortilla_chips/
+Mexican,https://www.simplyrecipes.com/recipes/how_to_make_corn_tortillas/
+Mexican,https://www.simplyrecipes.com/recipes/mexican_shrimp_cocktail/
+Mexican,https://www.simplyrecipes.com/recipes/chile_verde/
+Mexican,https://www.simplyrecipes.com/recipes/tortilla_soup/
+Mexican,https://www.simplyrecipes.com/recipes/agua_de_jamaica_hibiscus_tea/
+Mexican,https://www.simplyrecipes.com/recipes/mexican_wedding_cookies/
+Mexican,https://www.simplyrecipes.com/recipes/shrimp_ceviche/
+Mexican,https://www.simplyrecipes.com/recipes/cochinita_pibil/
+Mexican,https://www.simplyrecipes.com/recipes/pickled_jalapenos_escabeche/
+Mexican,https://www.simplyrecipes.com/recipes/mexican_lasagna/
+Mexican,https://www.simplyrecipes.com/recipes/chorizo_and_eggs/
+Mexican,https://www.simplyrecipes.com/recipes/homemade_flour_tortillas/
+Mexican,https://www.simplyrecipes.com/recipes/ensalada_de_pulpo_octopus_salad/
+Mexican,https://www.simplyrecipes.com/recipes/pressure_cooker_mexican_pulled_pork/
+Mexican,https://www.simplyrecipes.com/recipes/nopalitos_with_tomatoes_and_onions/
+Mexican,https://www.simplyrecipes.com/recipes/mexican_street_corn_nachos/
+Mexican,https://www.simplyrecipes.com/recipes/pork_and_poblano_stew/
+Mexican,https://www.simplyrecipes.com/recipes/baked_chicken_taquitos/
+Mexican,https://www.simplyrecipes.com/recipes/chiles_en_nogada_chilies_in_walnut_sauce/
+Mexican,https://www.simplyrecipes.com/recipes/huevos_a_la_mexicana/
+Mexican,https://www.simplyrecipes.com/recipes/pressure_cooker_green_pork_pozole/
+Mexican,https://www.simplyrecipes.com/recipes/squash_blossom_quesadillas/
+Mexican,https://www.simplyrecipes.com/recipes/huevos_motulenos/
+Mexican,https://www.simplyrecipes.com/recipes/mexican_chocolate_ice_cream/
+Mexican,https://www.simplyrecipes.com/recipes/vermicelli/
+Mexican,https://www.simplyrecipes.com/recipes/sopa_seca_de_fideo_with_tomatillos/
+Mexican,https://www.simplyrecipes.com/recipes/black_eyed_pea_salsa_with_cheese_quesadillas/
+Korean,https://www.simplyrecipes.com/japchae-recipe-8636248
+Korean,https://www.simplyrecipes.com/korean-potato-salad-recipe-8635584
+Korean,https://www.simplyrecipes.com/budae-jjigae-army-base-stew-recipe-7969733
+Korean,https://www.simplyrecipes.com/doenjang-jjigae-recipe-7481604
+Korean,https://www.simplyrecipes.com/korean-corn-cheese-recipe-7481603
+Korean,https://www.simplyrecipes.com/spicy-pork-bulgogi-recipe-7481601
+Korean,https://www.simplyrecipes.com/dongchimi-korean-radish-water-kimchi-recipe-7487393
+Korean,https://www.simplyrecipes.com/bibimbap-recipe-7089409
+Korean,https://www.simplyrecipes.com/recipes/sous_vide_korean_bbq_chicken/
+Korean,https://www.simplyrecipes.com/recipes/korean_beef_skewers/
+Korean,https://www.simplyrecipes.com/dubu-jorim-korean-braised-tofu-recipe-6544036
+Korean,https://www.simplyrecipes.com/classic-kimbap-korean-seaweed-rice-roll-recipe-5509308
+Korean,https://www.simplyrecipes.com/pajeon-korean-scallion-pancakes-recipe-5509292
+Korean,https://www.simplyrecipes.com/soy-sauce-eggs-recipe-5272286
+Korean,https://www.simplyrecipes.com/gochujang-chicken-5225103
+Korean,https://www.simplyrecipes.com/kimchi-jjigae-korean-kimchi-stew-recipe-5208069
+Korean,https://www.simplyrecipes.com/sigeumchi-namul-spinach-banchan-recipe-5207301
+Korean,https://www.simplyrecipes.com/kimchi-fried-rice-kimchi-bokkeumbap-recipe-5191933
+Korean,https://www.simplyrecipes.com/grilled-korean-bbq-pork-ribs-dwaeji-galbi-5115229
+Korean,https://www.simplyrecipes.com/beef-bulgogi-recipe-5235423
+Korean,https://www.simplyrecipes.com/dakgangjeong-sweet-and-spicy-korean-fried-chicken-recipe-5220294
+Korean,https://www.simplyrecipes.com/kalbi-jjim-korean-braised-short-ribs-recipe-5213154
+Korean,https://www.simplyrecipes.com/mandu-korean-dumplings-5212997
+Korean,https://www.simplyrecipes.com/tteokbokki-spicy-korean-rice-cakes-recipe-5224356
+Korean,https://www.simplyrecipes.com/gyeran-jjim-korean-steamed-eggs-recipe-5222914
+Korean,https://www.simplyrecipes.com/mandu-guk-korean-dumpling-soup-recipe-5213001
+Korean,https://www.simplyrecipes.com/tteokguk-korean-rice-cake-soup-recipe-5212710
+Korean,https://www.simplyrecipes.com/recipes/korean_spicy_cold_noodles/
+Korean,https://www.simplyrecipes.com/recipes/quick_kimchi_mak_gimchi/

@@ -1,24 +1,33 @@
+# Import necssary libraries
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.keys import Keys
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
-import time
 import csv
 import re
-import string
+
+# Creating a 'dassab=na.csv' file to store recipe data
 
 filename = "dassana.csv"
+
 with open(filename, mode="w", newline="", encoding='utf-8') as file:
     writer = csv.writer(file)
-    writer.writerow(["title","description","cuisine","rating","ingredient_list","serving","prep_time","cook_time","total_time","source","steps","nutrients","recipe_url","image_url"])
 
+    # Parameters for each recipe: title, description, cuisine, rating, ingredient_list, servings, prep_time, 
+    #                             cook_time, total_time, source, steps, nutrients, recipe_url, image_url
+
+    writer.writerow(["title","description","cuisine","rating","ingredient_list","serving","prep_time",
+                     "cook_time","total_time","source","steps","nutrients","recipe_url","image_url"])
+
+
+# Define paths and initialize the Chrome WebDriver
 driver_path = 'chromedriver-win32\\chromedriver.exe'
 chrome_service = Service(executable_path=driver_path)
 driver = webdriver.Chrome(service=chrome_service)
 
+
+# Function to get recipe title
 def get_title():
     try:
         title_element = driver.find_element(By.XPATH, "//h2[@class='wprm-recipe-name wprm-block-text-normal']").text
@@ -26,17 +35,20 @@ def get_title():
         title_element = '-'
     return title_element
 
+
+# Function to get recipe description
 def get_description():
     try:
         desc = driver.find_element(By.XPATH, "//div[@class='wprm-recipe-summary wprm-block-text-normal']").text
-        # inner_html = des.get_attribute('innerHTML')
-        desc = re.sub(r'<br\s*\/?>', ' ', desc) 
-        desc = re.sub(r'<.*?>', '', desc)
-        desc = " ".join(desc.split())
+        desc = re.sub(r'<br\s*\/?>', ' ', desc) # Replace <br> tags with spaces
+        desc = re.sub(r'<.*?>', '', desc) # Remove other HTML tags
+        desc = " ".join(desc.split())  # Clean up extra whitespace
     except: 
         desc = "-"
     return desc
 
+
+# Function to get list of ingredients
 def get_ingredients():
     all_ingredients = []
     try:
@@ -49,6 +61,8 @@ def get_ingredients():
         pass
     return all_ingredients
 
+
+# Function to get list of steps
 def get_steps():
     all_steps = []
     try:
@@ -57,16 +71,16 @@ def get_steps():
             li_elements = u.find_elements(By.TAG_NAME, 'li')
             for li in li_elements:
                 step = li.text
-                step = re.sub(r'<br\s*\/?>', ' ', step) 
-                step = re.sub(r'<.*?>', '', step)
-                step = " ".join(step.split())
+                step = re.sub(r'<br\s*\/?>', ' ', step)  # Replace <br> tags with spaces
+                step = re.sub(r'<.*?>', '', step) # Remove other HTML tags
+                step = " ".join(step.split()) # Clean up extra whitespace
                 all_steps.append(step)
-            # step = [li.text for li in li_elements]
-            # all_steps.extend(step) 
     except:
         pass
     return all_steps
 
+
+# Function to get metadata - prep_time, cook_time, total_time, serves
 def get_metadata():
     try:
         prep_time = driver.find_element(By.XPATH, "//span[@class='wprm-recipe-details wprm-recipe-details-minutes wprm-recipe-prep_time wprm-recipe-prep_time-minutes']").text.replace("\n"," ")
@@ -87,23 +101,31 @@ def get_metadata():
     
     return prep_time, cook_time, total_time, serves
 
+
+# Function to get image url
 def get_image_url():
     try:
         image_element = driver.find_element(By.XPATH, "//div[@class='wp-block-image']")
+
+        # Scrolling to get the image into view
         driver.execute_script("arguments[0].scrollIntoView();", image_element)
 
+        # Waiting for image to load
         WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, 'img')))
 
-        img_el = image_element.find_element(By.TAG_NAME, 'img')
+        img_element = image_element.find_element(By.TAG_NAME, 'img')
 
-        img_src = img_el.get_attribute("src")
-
+        img_src = img_element.get_attribute("src")
+        
+        # In case there's a placeholder instead of actual image
         if "data:image/svg+xml" in img_src or "placeholder" in img_src:
-            img_src = img_el.get_attribute("data-src") or img_el.get_attribute("data-lazy-src") or img_el.get_attribute("data-srcset")
+            img_src = img_element.get_attribute("data-src") or img_element.get_attribute("data-lazy-src") or img_element.get_attribute("data-srcset")
     except:
         img_src = "-"
     return img_src
     
+
+# Function to get recipe rating
 def get_rating():
     try:
         rating = driver.find_element(By.XPATH, "//div[@class='wprm-recipe-rating-details wprm-block-text-normal']//span[@class='wprm-recipe-rating-average']").text
@@ -111,6 +133,8 @@ def get_rating():
         rating = '-'
     return rating
 
+
+# Function to get cuisine of recipe
 def get_cuisine():
     try:
         cuisine = driver.find_element(By.XPATH, "//span[@class='wprm-recipe-cuisine wprm-block-text-bold']").text
@@ -118,10 +142,26 @@ def get_cuisine():
         cuisine = "-"
     return cuisine
 
-def get_content():
+
+# Function to get nutrients data
+def get_nutrients():
+    Nutrients = []
+
+    # Main Nutrients
+    main = driver.find_elements(By.XPATH, "//span[@class='nutrition-main']")
+    for el in main:
+        Nutrients.append([el.text])
+
+    # Sub Nutrients
+    sub = driver.find_elements(By.XPATH, "//span[@class='nutrition-sub']")
+    for el in sub:
+        Nutrients.append([el.text])
+    return Nutrients
+
+
+# Function to scrape recipe data from 'dassanalinks.txt' and store data to 'dassana.csv'
+def get_recipe_data():
     with open('dassanalinks.txt', 'r') as file:
-        for _ in range(694):
-            file.readline()
         for line in file:
             driver.get(line)
             title = get_title()
@@ -136,6 +176,8 @@ def get_content():
             nutrients = get_nutrients()
             store_output(title, desc, cuisine, rating, ingrd, serves, preptime, cooktime, totaltime, steps, nutrients, recipeurl, imageurl)
 
+
+# Function to store recipe data to 'dassana.csv'
 def store_output(title, desc, cuisine, rating, ingrd, serves, preptime, cooktime, totaltime, steps, nutrients, recipeurl, imageurl):
     filename = "dassana.csv"
     data=[title, desc, cuisine, rating, ingrd, serves, preptime, cooktime, totaltime,"Dassana's Veg Recipes", steps, nutrients, recipeurl, imageurl]
@@ -143,23 +185,11 @@ def store_output(title, desc, cuisine, rating, ingrd, serves, preptime, cooktime
         writer = csv.writer(file)
         writer.writerow(data)
 
-def store_links(links):
-    with open('dassanalinks.txt', 'w') as file:
-        for link in links:
-            file.write(link+"\n")
-
-def get_nutrients():
-    Nutrients = []
-
-    main = driver.find_elements(By.XPATH, "//span[@class='nutrition-main']")
-    for el in main:
-        Nutrients.append([el.text])
-    sub = driver.find_elements(By.XPATH, "//span[@class='nutrition-sub']")
-    for el in sub:
-        Nutrients.append([el.text])
-    return Nutrients
 
 # there is a dassanalinks.txt file where all the links of recipes are saved
-get_content()
+# Calls function to scrape data from each recipe link
+get_recipe_data()  
 
+
+# Closes browser
 driver.quit()

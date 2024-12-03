@@ -1,24 +1,33 @@
+# Import necessary libraries 
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.keys import Keys
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
-import time
 import csv
 import re
-import string
+
+# Creating a 'simplyrecipes.csv' file to store recipe information
 
 filename = "simplyrecipes.csv"
+
 with open(filename, mode="w", newline="", encoding='utf-8') as file:
+
     writer = csv.writer(file)
-    writer.writerow(["title","description","cuisine","ingredient_list","serving","prep_time","cook_time","total_time","source","steps","nutrients","recipe_url","image_url"])
+
+    # Parameters for each recipe: title, description, cuisine, ingredient_list, servings, prep_time, 
+    #                             cook_time, total_time, source, steps, nutrients, recipe_url, image_url
+
+    writer.writerow(["title","description","cuisine","ingredient_list","serving","prep_time",
+                     "cook_time","total_time","source","steps","nutrients","recipe_url","image_url"])
+
+
+# Define paths and initialize the Chrome WebDriver
 
 driver_path = 'chromedriver-win32\\chromedriver.exe'
 chrome_service = Service(executable_path=driver_path)
 driver = webdriver.Chrome(service=chrome_service)
 
+# Function to extract recipe title
 def get_title():
     try:
         title_element = driver.find_element(By.XPATH, "//h2[@id='recipe-block__header_1-0']").text
@@ -26,17 +35,20 @@ def get_title():
         title_element = '-'
     return title_element
 
+
+# Function to extract recipe description
 def get_description():
     try:
         desc = driver.find_element(By.XPATH, "//p[@class='heading__subtitle']").text
-        # inner_html = des.get_attribute('innerHTML')
-        desc = re.sub(r'<br\s*\/?>', ' ', desc) 
-        desc = re.sub(r'<.*?>', '', desc)
-        desc = " ".join(desc.split())
+        desc = re.sub(r'<br\s*\/?>', ' ', desc) # Replace <br> tags with spaces
+        desc = re.sub(r'<.*?>', '', desc) # Remove other HTML tags
+        desc = " ".join(desc.split()) # Clean up extra whitespace
     except: 
         desc = "-"
     return desc
 
+
+# Function to extract the list of ingredients
 def get_ingredients():
     all_ingredients = []
     try:
@@ -49,6 +61,8 @@ def get_ingredients():
         pass
     return all_ingredients
 
+
+# Function to extract list of steps
 def get_steps():
     all_steps = []
     try:
@@ -60,6 +74,8 @@ def get_steps():
         pass
     return all_steps
 
+
+# Function to extract metadata like prep time, cook time, total_time, and servings
 def get_metadata():
     try:
         prep_time = driver.find_element(By.XPATH, "//div[@class='prep-time project-meta__prep-time']//span[@class='meta-text__data']").text
@@ -79,6 +95,8 @@ def get_metadata():
         serves = "-"
     return prep_time, cook_time, total_time, serves
 
+
+# Function to extract image_url
 def get_image_url():
     try:
         image_element = driver.find_element(By.XPATH, "//img[@class='primary-image__image mntl-primary-image--blurry loaded']")
@@ -87,31 +105,41 @@ def get_image_url():
         img_src = "-"
     return img_src
     
-def get_cuisine():
-    try:
-        cuisine = driver.find_element(By.XPATH, "//span[@class='wprm-recipe-cuisine wprm-block-text-bold']").text
-    except:
-        cuisine = "-"
-    return cuisine
 
+# Function to extract nutrients
 def get_nutrients():
     nutrients = []
     try:
-        nutr = driver.find_elements(By.XPATH, "//tr[@class='nutrition-info__table--row']")
-        for nu in nutr:
-            ele = nu.find_elements(By.TAG_NAME,'td')
-            um = [el.text for el in ele]
-            um.reverse()
-            nutrients.append(um)
+        nutrient = driver.find_elements(By.XPATH, "//tr[@class='nutrition-info__table--row']")
+        for nu in nutrient:
+            element = nu.find_elements(By.TAG_NAME,'td')
+            nutrient_info = [el.text for el in element]
+            nutrient_info.reverse()
+            nutrients.append(nutrient_info)
     except:
         nutrients = []
     return nutrients
 
-def get_content():
-    with open('preprocessedlinks.txt', 'r') as file:
+
+# Function to scrape recipe data for each link
+def get_recipe_data():
+
+    # There are two .txt file with links.
+    # simplyrecipeslinks_cuisine.txt : Contains recipe links that has Cuisine data
+    # simplyrecipeslinks_no_cuisine.txt : Contains just recipe links without Cuisine data
+
+    links_with_cuisine = 'simplyrecipes\simplyrecipeslinks_cuisine.txt'
+    links_no_cuisine = 'simplyrecipes\simplyrecipeslinks_no_cuisine.txt'
+
+    with open(links_with_cuisine, 'r') as file:
         for line in file:
-            con = line.strip()
-            driver.get(con)
+
+            # content = line.strip()              # If links_no_cuisine was used
+            content = line.strip().split(',')  
+
+            # driver.get(content)                 # If links_no_cuisine was used
+            driver.get(content[1])
+
             title = get_title()
             desc = get_description()
             preptime, cooktime, totaltime, serves = get_metadata()
@@ -119,10 +147,15 @@ def get_content():
             steps = get_steps()
             imageurl = get_image_url()
             recipeurl = driver.current_url
-            cuisine = "-"
             nutrients = get_nutrients()
+
+            # cuisine = "-"                  # If links_no_cuisine was used
+            cuisine = content[0]
+            
             store_output(title, desc, cuisine, ingrd, serves, preptime, cooktime, totaltime, steps, nutrients, recipeurl, imageurl)
-          
+
+
+# Function to store recipe data into the CSV         
 def store_output(title, desc, cuisine, ingrd, serves, preptime, cooktime, totaltime, steps, nutrients, recipeurl, imageurl):
     filename = "simplyrecipes.csv"
     data=[title, desc, cuisine, ingrd, serves, preptime, cooktime, totaltime,"Simply Recipes", steps, nutrients, recipeurl, imageurl]
@@ -131,7 +164,8 @@ def store_output(title, desc, cuisine, ingrd, serves, preptime, cooktime, totalt
         writer.writerow(data)
 
 
-get_content()
-driver.quit()
+get_recipe_data()  # To scrape recipe data from each link stored in .txt files and store in simplyrecipes.csv file
+
+driver.quit()  # Close browser
 
 

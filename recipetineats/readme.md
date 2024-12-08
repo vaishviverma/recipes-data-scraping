@@ -1,8 +1,7 @@
-Three steps to get recipes:
+Note: You must properly download the chromedriver folder, depending on your OS. After this, replace the path in each script with the path of your chromedriver. To find where to replace, simply search "chromedriver".
 
-Step 1: Extract direct links to recipes and store it in a file named "links.txt".
-We lost the script for scraping these links, but can be written easily.
+Step 1: Chromedriver setup based on the above note.
 
-Step 2: Download the chromedriver folder, based on your OS, and make sure this folder is not renamed.
+Step 2: Run scrape_links.py. This extracts direct links to recipes and stores it in a file named "links.txt".
 
-Step 3: Run script.py.
+Step 3: Run script.py. This scrapes recipes and stores it in a csv.

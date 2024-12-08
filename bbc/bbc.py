@@ -6,8 +6,6 @@ import csv
 import re
 import string
 
-
-
 # Creating a 'bbc.csv' file to store recipe information
 filename = "bbc.csv"
 with open(filename, mode="w", newline="", encoding='utf-8') as file:

@@ -11,27 +11,34 @@ import csv
 import re
 
 
+#note: a lot of try-except is necessary so that scraping does not stop because of errors midway
+
+
+# create and initialize the csv file
 filename = "tasteatlas2.csv"
 with open(filename, mode="w", newline="", encoding='utf-8') as file:
     writer = csv.writer(file)
-    writer.writerow(["title","description","cuisine", "rating", "ingredient_list", "servings", "prep_time","cook_time", "rest_time", "ready_time", "source","steps","recipe_url","image_url"])
+    writer.writerow(["title", "description", "cuisine", "rating", "ingredient_list", "servings", "prep_time", "cook_time", "rest_time", "ready_time", "source", "steps", "recipe_url", "image_url"])
 
+# set up the chrome driver
 driver_path = 'chromedriver-linux64/chromedriver'
 website = 'https://www.tasteatlas.com/recipes'
 chrome_service = Service(executable_path=driver_path)
 driver = webdriver.Chrome(service=chrome_service)
 
+# navigate to the website
 driver.get(website)
 
 def get_title():
+    # extract the recipe title
     try:
         title_element = driver.find_element(By.CLASS_NAME, 'h2.h2--large.h2--muli.h2--black.h2--capitalize.selected-variation-h2').text
     except:
         title_element = '-'
-        
     return title_element
 
-def get_description():  
+def get_description():
+    # handle the "read more" button and extract the recipe description
     try:
         read_more_button = driver.find_element(By.XPATH, "//span[@class='read-more' and contains(text(), 'Read more')]")
         try:
@@ -49,10 +56,10 @@ def get_description():
         desc = " ".join(desc.split())
     except:
         desc = '-'
-        
     return desc
 
 def get_ingredients():
+    # extract the list of ingredients
     all_ingredients = []
     try:
         p_elements = driver.find_elements(By.XPATH, "//p[@class='ingredient-item']")
@@ -60,10 +67,10 @@ def get_ingredients():
             all_ingredients.append(p.text) 
     except:
         pass
-        
     return all_ingredients
 
 def get_steps():
+    # extract the recipe steps
     all_steps = []
     try:
         div_elements = driver.find_elements(By.XPATH, "//div[@class='step-img-desc']")
@@ -78,6 +85,7 @@ def get_steps():
     return all_steps
 
 def get_metadata():
+    # extract preparation, cook, ready, and rest times
     try:
         prep = driver.find_element(By.XPATH, "//div[@class='time-item preparation-time']").text
     except NoSuchElementException:
@@ -94,11 +102,10 @@ def get_metadata():
         rest = driver.find_element(By.XPATH, "//div[@class='time-item resting-time']").text
     except NoSuchElementException:
         rest = '-'
-    
     return prep, cook, ready, rest
 
-
 def get_image_url():
+    # extract the image url
     try:
         image_element = driver.find_element(By.XPATH, "//div[@class='selected-variation-img-wrapper']")
         try:
@@ -111,18 +118,16 @@ def get_image_url():
         return '-'
 
 def recipe_list():
+    # load and extract recipe links
     n = 66
     load_more_button_selector = '.btn.btn--inline.btn--underscore.btn--nopadding.btn--no-bgcolor.btn--black-text.btn--bold.hide-span-element'
     count = 0
     for _ in range(n):
         try:
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-                        
             load_more_button = driver.find_element(By.CSS_SELECTOR, load_more_button_selector)
             ActionChains(driver).move_to_element(load_more_button).click(load_more_button).perform()
-            
             time.sleep(1)
-            
         except Exception as e:
             print(f"Error: {e}")
             break
@@ -131,22 +136,21 @@ def recipe_list():
     try:
         div_elements = driver.find_elements(By.CLASS_NAME, 'details-heading__text')
         links = []
-
         for div in div_elements:
             try:
                 a_tag = div.find_element(By.TAG_NAME, 'a')
                 href = a_tag.get_attribute('href')
-                if (count > 300):
+                if count > 300:
                     links.append(href)
                 count += 1
             except:
                 pass
     except:
         pass
-
     return links
 
 def get_rating():
+    # extract the recipe rating
     try:
         rating = driver.find_element(By.CSS_SELECTOR, 'p.rating-num.ng-binding.ng-scope').text
     except:
@@ -154,6 +158,7 @@ def get_rating():
     return rating
 
 def get_serving():
+    # extract serving information
     try:
         serving_element = driver.find_element(By.XPATH, "//span[@class='ingredients-serving']")
         serving_text = serving_element.text
@@ -163,13 +168,11 @@ def get_serving():
         return '-'
 
 def get_content(links):
+    # iterate through each recipe link and extract data
     number_of_cuisines = 0
-    
     for link in links:
-        
         number_of_cuisines += 1
         driver.get(link)
-        
         time.sleep(2)
         try:
             cuisine = driver.find_element(By.CLASS_NAME, 'subtitle.subtitle--location').text
@@ -184,16 +187,19 @@ def get_content(links):
         imageurl = get_image_url()
         recipeurl = driver.current_url
         rating = get_rating()
-        store_output(title, desc, cuisine, rating, ingrd, servings, preptime, cooktime, resttime, readytime, steps, recipeurl, imageurl)                
-    
+        store_output(title, desc, cuisine, rating, ingrd, servings, preptime, cooktime, resttime, readytime, steps, recipeurl, imageurl)
+
 def store_output(title, desc, cuisine, rating, ingrd, servings, preptime, cooktime, resttime, readytime, steps, recipeurl, imageurl):
+    # write the extracted data to the csv file
     filename = "tasteatlas2.csv"
-    data=[title, desc, cuisine, rating, ingrd, servings, preptime, cooktime, resttime, readytime, "TasteAtlas", steps, recipeurl, imageurl]
+    data = [title, desc, cuisine, rating, ingrd, servings, preptime, cooktime, resttime, readytime, "TasteAtlas", steps, recipeurl, imageurl]
     with open(filename, mode="a", newline="", encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(data)
-        
+
+# extract recipe links and scrape data for each link
 links = recipe_list()
 get_content(links)
 
+# close the driver
 driver.quit()

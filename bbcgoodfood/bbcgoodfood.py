@@ -149,7 +149,7 @@ def get_rating():
 
 # Function to scrape recipe data for each link
 def get_recipe_data():
-    with open('bbcgoodfoodrecipelinks.txt', 'r') as file:
+    with open('recipelist.txt', 'r') as file:
         for line in file:
 
             # There was an issue in opening some recipes, hence the following 13 lines of code try to open the recipe atleast 3 times,

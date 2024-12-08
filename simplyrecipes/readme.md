@@ -5,6 +5,6 @@ We create two .txt files with links:
 simplyrecipeslinks_cuisine.txt : Contains recipe links that has Cuisine data
 simplyrecipeslinks_no_cuisine.txt : Contains just recipe links without Cuisine data
 
-The script to create these two files have been lost, but are simple to write. The format for these files can be checked from the existing files that have older links.
+The script to create these two files have been lost, but are simple to write. The format for these files can be checked from the existing files that have older links. We will update with the proper script soon enough.
 
-Once we have these files, run "simplyrecipes.py".
+Once we have these files, run "simplyrecipes.py". This will scrape data from each recipe's link.

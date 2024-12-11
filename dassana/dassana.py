@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import csv
 import re
 
-# Creating a 'dassab=na.csv' file to store recipe data
+# Creating a 'dassana.csv' file to store recipe data
 
 filename = "dassana.csv"
 
